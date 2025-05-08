@@ -74,7 +74,7 @@ export async function POST(request: Request) {
 
     // Save the analysis to the database
     try {
-      await fetch(`${process.env.NEXT_PUBLIC_APP_URL || "https://pro-roan-delta.vercel.app/"}/api/analysis`, {
+      await fetch(`${process.env.NEXT_PUBLIC_APP_URL || "https://pro-roan-delta.vercel.app"}/api/analysis`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
